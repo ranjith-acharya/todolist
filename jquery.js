@@ -27,7 +27,7 @@ function move(a){
 	var move_task = $(a).parent().parent().attr("id");
 	var temp = $(a).parent().text();
 	swal({title:"The Task Name -"+temp});
-	$(a).parent().parent().hide();
+	$(a).parent().parent().remove();
 	//alert("The Task Name :"+temp);
 	//alert(move_task);
 	var tk1_id = "tk"+count1;
